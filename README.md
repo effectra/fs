@@ -196,14 +196,6 @@ Note: Please make sure to replace /path/to with the actual path in your code.
 
 Effectra\Fs\Path is a utility class for manipulating file paths in PHP.
 
-## Installation
-
-You can install this package via Composer. Run the following command in your project directory:
-
-```
-composer require effectra/fs
-```
-
 ## Usage
 
 The `Path` class provides several useful methods for manipulating file paths:
@@ -251,14 +243,6 @@ echo $path; // Outputs 'file.txt'
 # Effectra FS - FileData Class 
 
 Effectra\Fs\FileData is a utility class for converting files to data URLs and vice versa in PHP.
-
-##Installation
-
-You can install this package via Composer. Run the following command in your project directory:
-
-```
-composer require effectra/fs
-```
 
 ##Usage
 
