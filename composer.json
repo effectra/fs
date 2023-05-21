@@ -1,6 +1,6 @@
 {
     "name": "effectra/fs",
-    "description": "The Effectra File System package.",
+    "description": "The Effectra File System (fs) package.",
     "type": "library",
     "license": "MIT",
     "autoload": {
