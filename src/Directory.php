@@ -223,13 +223,13 @@ class Directory
             throw new \Exception("This is not directory");
         }
 
-        $__ = strpos(basename($directory), '.');
+        $dir_name = strpos(basename($directory), '.');
 
-        if ($__ !== false) {
+        if ($dir_name !== false) {
             return true;
         }
 
-        return  $__;
+        return  $dir_name;
     }
     /**
      * Retrieves the files within a directory.
