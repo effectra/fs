@@ -291,7 +291,48 @@ if ($result) {
 }
 ```
 
+# FileEncryption Class (Version >= 2.0)
 
+The `FileEncryption` class provides utility methods for encrypting and decrypting files.
+
+### Usage
+
+```php
+use Effectra\Fs\FileEncryption;
+
+// Create an instance of FileEncryption with the encryption key
+$fileEncryption = new FileEncryption('your-encryption-key');
+
+// Encrypt a file
+$fileEncryption->encryptFile('path/to/source/file.txt', 'path/to/destination/encrypted-file.txt');
+
+// Decrypt a file
+$fileEncryption->decryptFile('path/to/source/encrypted-file.txt', 'path/to/destination/decrypted-file.txt');
+```
+
+Make sure to replace `'your-encryption-key'` with your own encryption key.
+
+### Example
+
+```php
+use Effectra\Fs\FileEncryption;
+
+$fileEncryption = new FileEncryption('my-secret-key');
+
+// Encrypt a file
+$fileEncryption->encryptFile('data.txt', 'encrypted-data.txt');
+
+// Decrypt a file
+$fileEncryption->decryptFile('encrypted-data.txt', 'decrypted-data.txt');
+```
+
+In the above example, the `FileEncryption` class is used to encrypt the content of the `data.txt` file and store the encrypted data in the `encrypted-data.txt` file. It also provides a method to decrypt the encrypted data and save it in a separate file.
+
+### Encryption Algorithm
+
+The `FileEncryption` class uses the AES-256-CBC encryption algorithm with a randomly generated initialization vector (IV) for each encryption operation.
+
+**Note:** Make sure to keep the encryption key secure and do not share it with unauthorized individuals.
 
 
 # Contributing
