@@ -291,7 +291,7 @@ if ($result) {
 }
 ```
 
-# FileEncryption Class (Version >= 2.0)
+# FileEncryption Class (Version >= 1.1)
 
 The `FileEncryption` class provides utility methods for encrypting and decrypting files.
 
