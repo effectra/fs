@@ -308,6 +308,7 @@ $fileEncryption->encryptFile('path/to/source/file.txt', 'path/to/destination/enc
 
 // Decrypt a file
 $fileEncryption->decryptFile('path/to/source/encrypted-file.txt', 'path/to/destination/decrypted-file.txt');
+
 ```
 
 Make sure to replace `'your-encryption-key'` with your own encryption key.
